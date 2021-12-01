@@ -1,0 +1,54 @@
+/*COLORES*/
+:root{
+    --scroll-thumb: rgba(0, 0, 0, 0.40);
+    --scroll-primary:#0d6efd;
+    --scroll-secondary: #6c757d;
+    --scroll-success:#198754;
+    --scroll-pagado:#00b81f;
+    --scroll-danger:#dc3545;
+    --scroll-warning:#ffc107;
+    --scroll-info:#0dcaf0;/*f8f9fa*/
+    --scroll-light:#e2e2e2;
+    --scroll-dark:#343a40;
+    --scroll-white:#fff;
+
+    --scroll-primary-2:rgba(13, 109, 253, 0.699);
+    --scroll-secondary-2: rgba(108, 117, 125, 0.644);
+    --scroll-success-2:rgba(25, 135, 84, 0.623);
+    --scroll-pagado-2:rgba(0, 184, 31, 0.616);
+    --scroll-danger-2:rgba(220, 53, 70, 0.651);
+    --scroll-warning-2:rgba(255, 193, 7, 0.616);
+    --scroll-info-2:rgba(13, 202, 240, 0.603);
+    --scroll-light-2:rgba(248, 249, 250, 0.596);
+    --scroll-dark-2:rgba(52, 58, 64, 0.671);
+    --scroll-white-2:rgba(255, 255, 255, 0.582);
+}
+
+/*SCROLL*/
+body{
+    top:0px!important;
+    scrollbar-width: thin;
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: var(--scroll-light);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: var(--scroll-thumb);
+}
+
+/*DEMAS*/
+table tr td:first-child{
+    white-space: nowrap;
+    width: 7em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.caja{
+    background-color: red;
+    overflow-y: scroll;
+    height: 65vh;
+}
