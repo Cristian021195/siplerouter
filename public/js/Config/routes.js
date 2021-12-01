@@ -17,7 +17,9 @@ export function routes(){
 
     //FUNCIONES QUE RENDERIZAN
     function inicio(){
-        $main.innerHTML = 'inicio';
+        $main.innerHTML = `Inicio: algo que aclarar, si vamos a refrescar desde una ruta definida por el forontend,
+        debemos dejas la ruta principal sin ./, solo con barra / y alli acceder a nuestros recursos/carpetas/manifest, etc, de esta manera evitamos un pantallazo blanco 
+        o error 404`;
     }
 
     function contacto(){
