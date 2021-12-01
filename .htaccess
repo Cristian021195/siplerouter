@@ -1,0 +1,14 @@
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:distribuidora-compromiso.xyz
+Header always set Content-Security-Policy: upgrade-insecure-requests
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:distribuidora-compromiso.xyz
+
+Options +SymLinksIfOwnerMatch 
+RewriteEngine On 
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . / [L]
+#  SetEnv ID Europe/Amsterdam America/Argentina/Tucuman
+php_value date.timezone 'America/Argentina/Tucuman'
